@@ -44,6 +44,7 @@ public class TestStep {
 		//driver.findElement(By.name("password")).clear();    
 	    //driver.findElement(By.name("password")).sendKeys("vasu1234");
 		lp.enterPassword("vasu1234");
+		System.out.println("User is on HotelApp Homepage");
 	}
 
 	@When("User clicks on login button")
