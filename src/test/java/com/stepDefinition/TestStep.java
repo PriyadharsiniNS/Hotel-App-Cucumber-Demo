@@ -36,6 +36,7 @@ public class TestStep {
 	    uname.sendKeys("vasuvespag");*/
 		
 		lp.enterUsername("vasuvespag");
+		System.out.println("User enters username");
 	}
 
 	@When("User enters password")
