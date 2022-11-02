@@ -4,13 +4,13 @@
   <artifactId>HotelAppCucumberDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  <dependency>
-  <groupId>com.sun</groupId>
-  <artifactId>tools</artifactId>
-  <version>1.8.0</version>
-  <scope>system</scope>
-  <systemPath>C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar</systemPath>
-  </dependency>
+<dependency>
+<groupId>com.sun</groupId>
+<artifactId>tools</artifactId>
+<version>1.8.0</version>
+<scope>system</scope>
+<systemPath>C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar</systemPath>
+</dependency>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -37,6 +37,13 @@
     <version>7.6.1</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+	<groupId>tech.grasshopper</groupId>
+	<artifactId>extentreports-cucumber7-adapter</artifactId>
+	<version>1.7.0</version>
+</dependency>
+
+
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -89,23 +96,29 @@
     <version>4.8.1</version>
     <scope>test</scope>
 </dependency>
-<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 <dependency>
-    <groupId>tech.grasshopper</groupId>
-    <artifactId>extentreports-cucumber7-adapter</artifactId>
-    <version>1.7.0</version>
+<groupId>org.projectlombok</groupId>
+<artifactId>lombok-maven-plugin</artifactId>
+<version>1.18.20.0</version>
+<type>maven-plugin</type>
 </dependency>
 
+
 </dependencies>
-<!--<build>
+ <build>    
     <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <configuration>
-          <release>18</release>
-        </configuration>
-      </plugin>
+      <plugin> 
+<groupId>org.apache.maven.plugins</groupId> 
+<artifactId>maven-compiler-plugin</artifactId> 
+<version>3.8.0</version> 
+<configuration> 
+<release>8</release> 
+</configuration>
+ </plugin>
     </plugins>
-  </build>-->
+  </build>
+
+
+
 </project>
+
