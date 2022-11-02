@@ -50,6 +50,7 @@ public class TestStep {
 	public void user_clicks_on_login_button() {
 		//driver.findElement(By.className("login_button")).click();
 		lp.clickLoginButton();
+		System.out.println("User clicks on login button");
 	}
 
 	@Then("Login is successful")
